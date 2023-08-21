@@ -1,0 +1,15 @@
+ip,AS Number,Range,Location,Organization
+192.168.41.41, , , , 
+103.232.241.70,AS59193,103.232.241.0 - 103.232.241.255,"Sangāreddi, Telangana, India",IIT Hyderabad
+103.232.241.2,AS59193,103.232.241.0 - 103.232.241.255,"Sangāreddi, Telangana, India",IIT Hyderabad
+10.160.24.5, , , , 
+49.45.4.103,AS64049,49.32.0.0 - 49.47.255.255,"Los Angeles, California, United States",Reliance Jio Infocomm Pte Ltd Singapore
+4.7.26.61,AS3356,4.0.0.0 - 4.127.255.255,"Los Angeles, California, United States","Level 3 Parent, LLC"
+129.250.9.93,AS2914,129.250.0.0 - 129.250.255.255,"Los Angeles, California, United States","NTT America, Inc."
+129.250.3.192,AS2914,129.250.0.0 - 129.250.255.255,"Tokyo, Tokyo, Japan","NTT America, Inc."
+129.250.5.45,AS2914,129.250.0.0 - 129.250.255.255,"Tokyo, Tokyo, Japan","NTT America, Inc."
+120.88.53.30,AS2914,120.88.48.0 - 120.88.63.255,"Motoyoyogichō, Tokyo, Japan","NTT America, Inc."
+122.1.245.70,AS4713,122.1.0.0 - 122.1.255.255,"Hatsudai, Tokyo, Japan",NTT Communications Corporation
+211.0.210.114,AS4713,211.0.0.0 - 211.7.255.255,"Tokyo, Tokyo, Japan",NTT Communications Corporation
+61.113.104.254,AS4713,61.112.0.0 - 61.127.255.255,"Osaka, Ōsaka, Japan",NTT Communications Corporation
+61.113.104.9,AS4713,61.112.0.0 - 61.127.255.255,"Osaka, Ōsaka, Japan",NTT Communications Corporation

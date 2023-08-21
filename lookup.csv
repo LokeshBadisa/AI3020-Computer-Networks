@@ -1,0 +1,11 @@
+ip,AS Number,Range,Location,Organization
+192.168.41.41, , , , 
+103.232.241.70,AS59193,103.232.241.0 - 103.232.241.255,"Sangāreddi, Telangana, India",IIT Hyderabad
+103.232.241.2,AS59193,103.232.241.0 - 103.232.241.255,"Sangāreddi, Telangana, India",IIT Hyderabad
+10.160.24.5, , , , 
+10.255.222.33, , , , 
+130.117.48.145,AS174,130.117.0.0 - 130.117.255.255,"London, England, United Kingdom",Cogent Communications
+154.54.60.13,AS174,154.54.0.0 - 154.54.255.255,"London, England, United Kingdom",Cogent Communications
+154.54.57.162,AS174,154.54.0.0 - 154.54.255.255,"Camden Town, England, United Kingdom",Cogent Communications
+154.14.40.57,AS286,154.14.40.0 - 154.14.43.255,"Poplar, England, United Kingdom",GTT Communications Inc.
+192.0.46.43,AS16876,192.0.32.0 - 192.0.47.255,"Ashburn, Virginia, United States",ICANN

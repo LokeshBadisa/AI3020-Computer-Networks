@@ -1,0 +1,9 @@
+ip,AS Number,Range,Location,Organization
+192.168.41.41, , , , 
+103.232.241.70,AS59193,103.232.241.0 - 103.232.241.255,"Sangāreddi, Telangana, India",IIT Hyderabad
+103.232.241.2,AS59193,103.232.241.0 - 103.232.241.255,"Sangāreddi, Telangana, India",IIT Hyderabad
+10.119.254.121, , , , 
+10.160.24.5, , , , 
+52.93.11.126,,52.84.0.0 - 52.95.255.255,"Singapore, Singapore, Singapore",
+15.230.209.34,,15.228.0.0 - 15.231.255.255,"Singapore, Singapore, Singapore",
+52.219.150.107,AS16509,52.192.0.0 - 52.223.191.255,"Tokyo, Tokyo, Japan","Amazon.com, Inc."

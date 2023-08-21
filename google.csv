@@ -1,0 +1,8 @@
+ip,AS Number,Range,Location,Organization
+192.168.41.41, , , , 
+103.232.241.70,AS59193,103.232.241.0 - 103.232.241.255,"Sangāreddi, Telangana, India",IIT Hyderabad
+103.232.241.2,AS59193,103.232.241.0 - 103.232.241.255,"Sangāreddi, Telangana, India",IIT Hyderabad
+10.119.254.121, , , , 
+142.251.227.213,AS15169,142.250.0.0 - 142.251.255.255,"Chennai, Tamil Nadu, India",Google LLC
+142.250.228.81,AS15169,142.250.0.0 - 142.251.255.255,"Chennai, Tamil Nadu, India",Google LLC
+142.250.67.46,AS15169,142.250.0.0 - 142.251.255.255,"Chennai, Tamil Nadu, India",Google LLC

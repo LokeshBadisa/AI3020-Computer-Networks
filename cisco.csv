@@ -1,0 +1,10 @@
+ip,AS Number,Range,Location,Organization
+103.232.241.70,AS59193,103.232.241.0 - 103.232.241.255,"Sangāreddi, Telangana, India",IIT Hyderabad
+103.232.241.2,AS59193,103.232.241.0 - 103.232.241.255,"Sangāreddi, Telangana, India",IIT Hyderabad
+195.50.117.33,AS3356,195.50.116.0 - 195.50.117.255,"London, England, United Kingdom","Level 3 Parent, LLC"
+4.69.208.229,AS3356,4.0.0.0 - 4.127.255.255,"Dallas, Texas, United States","Level 3 Parent, LLC"
+4.59.34.66,AS3356,4.0.0.0 - 4.127.255.255,"Dallas, Texas, United States","Level 3 Parent, LLC"
+128.107.2.5,AS109,128.107.0.0 - 128.107.255.255,"Dallas, Texas, United States","Cisco Systems, Inc."
+72.163.0.182,AS109,72.163.0.0 - 72.163.255.255,"Dallas, Texas, United States","Cisco Systems, Inc."
+72.163.4.129,AS109,72.163.0.0 - 72.163.255.255,"Dallas, Texas, United States","Cisco Systems, Inc."
+72.163.4.185,AS109,72.163.0.0 - 72.163.255.255,"Dallas, Texas, United States","Cisco Systems, Inc."

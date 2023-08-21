@@ -1,0 +1,8 @@
+ipwhois
+pandas
+json
+matplotlib
+ip2geotools
+geopandas
+shapely
+tqdm

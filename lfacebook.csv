@@ -1,0 +1,9 @@
+ip,AS Number,Range,Location,Organization
+192.168.41.41, , , , 
+103.232.241.70,AS59193,103.232.241.0 - 103.232.241.255,"Sangāreddi, Telangana, India",IIT Hyderabad
+103.232.241.2,AS59193,103.232.241.0 - 103.232.241.255,"Sangāreddi, Telangana, India",IIT Hyderabad
+10.152.7.233, , , , 
+157.240.68.238,AS32934,157.240.0.0 - 157.240.255.255,"Mumbai, Maharashtra, India","Facebook, Inc."
+31.13.29.205,AS32934,31.13.24.0 - 31.13.31.255,"Mumbai, Maharashtra, India","Facebook, Inc."
+157.240.38.69,AS32934,157.240.0.0 - 157.240.255.255,"Menlo Park, California, United States","Facebook, Inc."
+157.240.16.16,AS32934,157.240.0.0 - 157.240.255.255,"Mumbai, Maharashtra, India","Facebook, Inc."
