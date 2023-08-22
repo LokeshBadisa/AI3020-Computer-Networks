@@ -4,7 +4,6 @@ import json
 import pandas as pd
 import shutil
 from PIL import Image
-import glob
 import ipwhois
 from ipwhois import IPWhois
 import geopandas as gpd
@@ -17,8 +16,43 @@ warnings.filterwarnings("ignore")
 
 def generateTable(url,isVis=False):
     data = os.popen(f'traceroute -I {url}').read()
-    data = re.findall('\(.*?\)', data)
+    generatecsv(data,url.split('.',1)[0],isVis)
 
+def GetLocation(ip):
+    res = DbIpCity.get(ip, api_key="free")
+    return res.latitude,res.longitude
+
+def make_gif(frame_folder,name):
+    D = {}
+    for i in os.scandir(f"{frame_folder}"):
+        D[int(i.name.split(".",1)[0])]=i
+    frames = [Image.open(f"{frame_folder}/"+D[i].name) for i in range(0,len(D))]
+    frame_one = frames[0]
+    frame_one.save(f'{name}.gif', format="GIF", append_images=frames,
+               save_all=True, duration=1000, loop=0)
+    
+def visualize(L,name):
+    # print(L)
+    L = L.dropna()
+    if os.path.exists('./gifs'):
+        shutil.rmtree('./gifs')
+    os.mkdir('gifs')
+    for i in range(L.shape[0]):
+        plt.figure(figsize=(16,11))
+        geometry = [Point(xy) for xy in zip(L.iloc[0:i]['longitude'], L.iloc[0:i]['latitude'])]
+        gdf = GeoDataFrame(L.iloc[0:i], geometry = geometry)
+        world = gpd.read_file(gpd.datasets.get_path('naturalearth_lowres'))
+        gdf.plot(ax = world.plot(figsize = (10, 10)), color = 'red', markersize = 10)
+        plt.plot(L.iloc[0:i]['longitude'], L.iloc[0:i]['latitude'],color='red')
+        for j in range(i):
+            plt.annotate(j+1,(L.iloc[j,1], L.iloc[j,0]))
+        plt.savefig(f'./gifs/{i}.jpg')
+    make_gif('./gifs/',name)
+    shutil.rmtree('./gifs')
+
+
+def generatecsv(s,websitename,isVis:False):
+    data = re.findall('\(.*?\)', s)
     bogon_count=0
     locations = pd.DataFrame(columns=['latitude','longitude'])
 
@@ -56,44 +90,13 @@ def generateTable(url,isVis=False):
                                     'Organization':json_object['org'].split(" ",1)[1]}
         
         df.loc[len(df)] = new_row
+        if 'bogon' in json_object.keys():
+            continue
         loc = GetLocation(json_object['ip'])
         locations.loc[len(locations)] = {'latitude':loc[0],'longitude':loc[1]}
-    print(f'{url.split(".",1)[0]}')
+    print(f'{websitename}')
     print("Bogon Count: "+str(bogon_count))
     print(df)
-    df.to_csv(f'{url.split(".",1)[0]}.csv',index=False)
+    df.to_csv(f'{websitename}.csv',index=False)
     if isVis:
-        visualize(locations,f'{url.split(".",1)[0]}')
-
-
-def GetLocation(ip):
-    res = DbIpCity.get(ip, api_key="free")
-    return res.latitude,res.longitude
-
-def make_gif(frame_folder,name):
-    D = {}
-    for i in os.scandir(f"{frame_folder}"):
-        D[int(i.name.split(".",1)[0])]=i
-    frames = [Image.open(f"{frame_folder}/"+D[i].name) for i in range(0,len(D))]
-    frame_one = frames[0]
-    frame_one.save(f'{name}.gif', format="GIF", append_images=frames,
-               save_all=True, duration=1000, loop=0)
-    
-def visualize(L,name):
-    # print(L)
-    L = L.dropna()
-    if os.path.exists('./gifs'):
-        shutil.rmtree('./gifs')
-    os.mkdir('gifs')
-    for i in range(0,L.shape[0]):
-        plt.figure(figsize=(16,11))
-        geometry = [Point(xy) for xy in zip(L.iloc[0:i]['longitude'], L.iloc[0:i]['latitude'])]
-        gdf = GeoDataFrame(L.iloc[0:i], geometry = geometry)
-        world = gpd.read_file(gpd.datasets.get_path('naturalearth_lowres'))
-        gdf.plot(ax = world.plot(figsize = (10, 10)), color = 'red', markersize = 10)
-        plt.plot(L.iloc[0:i]['longitude'], L.iloc[0:i]['latitude'],color='red')
-        for j in range(i):
-            plt.annotate(j+1,(L.iloc[j,1], L.iloc[j,0]))
-        plt.savefig(f'./gifs/{i}.jpg')
-    make_gif('./gifs/',name)
-    shutil.rmtree('./gifs')
+        visualize(locations,f'{websitename}')

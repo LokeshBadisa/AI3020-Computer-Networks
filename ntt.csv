@@ -1,15 +1,23 @@
 ip,AS Number,Range,Location,Organization
-192.168.41.41, , , , 
-103.232.241.70,AS59193,103.232.241.0 - 103.232.241.255,"Sangāreddi, Telangana, India",IIT Hyderabad
-103.232.241.2,AS59193,103.232.241.0 - 103.232.241.255,"Sangāreddi, Telangana, India",IIT Hyderabad
-10.160.24.5, , , , 
-49.45.4.103,AS64049,49.32.0.0 - 49.47.255.255,"Los Angeles, California, United States",Reliance Jio Infocomm Pte Ltd Singapore
-4.7.26.61,AS3356,4.0.0.0 - 4.127.255.255,"Los Angeles, California, United States","Level 3 Parent, LLC"
-129.250.9.93,AS2914,129.250.0.0 - 129.250.255.255,"Los Angeles, California, United States","NTT America, Inc."
+130.117.254.57,AS174,130.117.0.0 - 130.117.255.255,"London, England, United Kingdom",Cogent Communications
+154.25.4.169,AS174,154.25.0.0 - 154.25.255.255,"London, England, United Kingdom",Cogent Communications
+154.54.39.97,AS174,154.54.0.0 - 154.54.255.255,"London, England, United Kingdom",Cogent Communications
+154.54.38.49,AS174,154.54.0.0 - 154.54.255.255,"London, England, United Kingdom",Cogent Communications
+130.117.51.42,AS174,130.117.0.0 - 130.117.255.255,"Amsterdam, North Holland, Netherlands",Cogent Communications
+154.54.56.94,AS174,154.54.0.0 - 154.54.255.255,"Amsterdam, North Holland, Netherlands",Cogent Communications
+130.117.50.6,AS174,130.117.0.0 - 130.117.255.255,"Amsterdam, North Holland, Netherlands",Cogent Communications
+130.117.2.241,AS174,130.117.0.0 - 130.117.255.255,"Amsterdam, North Holland, Netherlands",Cogent Communications
+130.117.15.130,AS174,130.117.0.0 - 130.117.255.255,"Amsterdam, North Holland, Netherlands",Cogent Communications
+129.250.7.86,AS2914,129.250.0.0 - 129.250.255.255,"Amsterdam, North Holland, Netherlands","NTT America, Inc."
+129.250.5.1,AS2914,129.250.0.0 - 129.250.255.255,"London, England, United Kingdom","NTT America, Inc."
+129.250.6.147,AS2914,129.250.0.0 - 129.250.255.255,"New York City, New York, United States","NTT America, Inc."
+129.250.2.111,AS2914,129.250.0.0 - 129.250.255.255,"Ashburn, Virginia, United States","NTT America, Inc."
 129.250.3.192,AS2914,129.250.0.0 - 129.250.255.255,"Tokyo, Tokyo, Japan","NTT America, Inc."
-129.250.5.45,AS2914,129.250.0.0 - 129.250.255.255,"Tokyo, Tokyo, Japan","NTT America, Inc."
-120.88.53.30,AS2914,120.88.48.0 - 120.88.63.255,"Motoyoyogichō, Tokyo, Japan","NTT America, Inc."
+129.250.5.7,AS2914,129.250.0.0 - 129.250.255.255,"Motoyoyogichō, Tokyo, Japan","NTT America, Inc."
+120.88.53.18,AS2914,120.88.48.0 - 120.88.63.255,"Motoyoyogichō, Tokyo, Japan","NTT America, Inc."
+129.250.5.7,AS2914,129.250.0.0 - 129.250.255.255,"Motoyoyogichō, Tokyo, Japan","NTT America, Inc."
 122.1.245.70,AS4713,122.1.0.0 - 122.1.255.255,"Hatsudai, Tokyo, Japan",NTT Communications Corporation
+120.88.53.18,AS2914,120.88.48.0 - 120.88.63.255,"Motoyoyogichō, Tokyo, Japan","NTT America, Inc."
+120.88.53.22,AS2914,120.88.48.0 - 120.88.63.255,"Motoyoyogichō, Tokyo, Japan","NTT America, Inc."
+60.37.54.166,AS4713,60.32.0.0 - 60.47.255.255,"Hatsudai, Tokyo, Japan",NTT Communications Corporation
 211.0.210.114,AS4713,211.0.0.0 - 211.7.255.255,"Tokyo, Tokyo, Japan",NTT Communications Corporation
-61.113.104.254,AS4713,61.112.0.0 - 61.127.255.255,"Osaka, Ōsaka, Japan",NTT Communications Corporation
-61.113.104.9,AS4713,61.112.0.0 - 61.127.255.255,"Osaka, Ōsaka, Japan",NTT Communications Corporation

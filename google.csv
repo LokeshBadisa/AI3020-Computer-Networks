@@ -1,8 +1,15 @@
 ip,AS Number,Range,Location,Organization
-192.168.41.41, , , , 
-103.232.241.70,AS59193,103.232.241.0 - 103.232.241.255,"Sangāreddi, Telangana, India",IIT Hyderabad
-103.232.241.2,AS59193,103.232.241.0 - 103.232.241.255,"Sangāreddi, Telangana, India",IIT Hyderabad
-10.119.254.121, , , , 
-142.251.227.213,AS15169,142.250.0.0 - 142.251.255.255,"Chennai, Tamil Nadu, India",Google LLC
-142.250.228.81,AS15169,142.250.0.0 - 142.251.255.255,"Chennai, Tamil Nadu, India",Google LLC
-142.250.67.46,AS15169,142.250.0.0 - 142.251.255.255,"Chennai, Tamil Nadu, India",Google LLC
+130.117.254.57,AS174,130.117.0.0 - 130.117.255.255,"London, England, United Kingdom",Cogent Communications
+154.25.4.173,AS174,154.25.0.0 - 154.25.255.255,"London, England, United Kingdom",Cogent Communications
+154.25.4.169,AS174,154.25.0.0 - 154.25.255.255,"London, England, United Kingdom",Cogent Communications
+154.54.39.25,AS174,154.54.0.0 - 154.54.255.255,"London, England, United Kingdom",Cogent Communications
+154.54.39.21,AS174,154.54.0.0 - 154.54.255.255,"London, England, United Kingdom",Cogent Communications
+130.117.51.138,AS174,130.117.0.0 - 130.117.255.255,"London, England, United Kingdom",Cogent Communications
+130.117.51.74,AS174,130.117.0.0 - 130.117.255.255,"London, England, United Kingdom",Cogent Communications
+195.2.26.25,AS1273,195.2.0.0 - 195.2.31.255,"Poplar, England, United Kingdom",Vodafone Group PLC
+195.2.24.130,AS1273,195.2.24.0 - 195.2.24.255,"London, England, United Kingdom",Vodafone Group PLC
+195.2.5.10,AS1273,195.2.5.0 - 195.2.5.255,"London, England, United Kingdom",Vodafone Group PLC
+108.170.246.161,AS15169,108.170.192.0 - 108.170.255.255,"Holborn, England, United Kingdom",Google LLC
+108.170.246.129,AS15169,108.170.192.0 - 108.170.255.255,"London, England, United Kingdom",Google LLC
+209.85.241.95,AS15169,209.85.128.0 - 209.85.255.255,"London, England, United Kingdom",Google LLC
+172.217.169.14,AS15169,172.217.0.0 - 172.217.255.255,"London, England, United Kingdom",Google LLC
