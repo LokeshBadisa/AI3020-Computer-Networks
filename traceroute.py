@@ -6,4 +6,4 @@ warnings.filterwarnings("ignore")
 urls = ['ntt.com','google.com']
 
 for url in tqdm(urls):
-    generateTable(url,True)
+    generateTable(url,'Wifi',True)

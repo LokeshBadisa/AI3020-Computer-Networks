@@ -5,6 +5,7 @@ import pandas as pd
 import shutil
 from PIL import Image
 import ipwhois
+import socket
 from ipwhois import IPWhois
 import geopandas as gpd
 from geopandas import GeoDataFrame
@@ -14,9 +15,9 @@ from ip2geotools.databases.noncommercial import DbIpCity
 import warnings
 warnings.filterwarnings("ignore")
 
-def generateTable(url,isVis=False):
+def generateTable(url,mode,isVis=False):
     data = os.popen(f'traceroute -I {url}').read()
-    generatecsv(data,url.split('.',1)[0],isVis)
+    generatecsv(data,url.split('.',1)[0],isVis,mode)
 
 def GetLocation(ip):
     res = DbIpCity.get(ip, api_key="free")
@@ -51,12 +52,18 @@ def visualize(L,name):
     shutil.rmtree('./gifs')
 
 
-def generatecsv(s,websitename,isVis:False):
+def generatecsv(s,websitename,isVis:False,mode):
     data = re.findall('\(.*?\)', s)
     bogon_count=0
     locations = pd.DataFrame(columns=['latitude','longitude'])
 
     df = pd.DataFrame(columns=["ip","AS Number","Range","Location","Organization"])
+    
+    hostname = socket.gethostname()
+    IPAddr = socket.gethostbyname(hostname)
+    df.loc[len(df)]={'ip':IPAddr,'AS Number':'  ','Range':'  ','Location':mode,'Organization':'  '}
+    loc = GetLocation(IPAddr)
+    locations.loc[len(locations)] = {'latitude':loc[0],'longitude':loc[1]}
     for i in data[1:]:
         
         ipinfo = os.popen(f'ipinfo {i[1:-1]} -j')
